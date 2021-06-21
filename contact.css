@@ -1,0 +1,366 @@
+/* base */
+a {
+  text-decoration: none;
+  color: #171717;
+}
+a:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+li {
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  font-family: "Noto Serif", "Noto Serif JP", serif;
+  color: #171717;
+}
+img {
+  vertical-align: bottom;
+  width: 100%;
+}
+.section-wrapper {
+  padding: 100px 0 70px;
+}
+.section-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 6rem;
+  font-style: italic;
+  color: #282f35;
+  padding: 0 20px;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+.section-bottom {
+  font-size: 9rem;
+  opacity: 0.05;
+  color: #171717;
+  max-width: 1200px;
+  font-weight: bold;
+  margin: 0 0 0 15px;
+}
+.right {
+  text-align: right;
+  max-width: 1200px;
+}
+.button {
+  width: 235px;
+  height: 60px;
+  background-color: #f7d43f;
+  border-radius: 30px;
+  box-shadow: 0px 0px 6px #1b1310;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  line-height: 60px;
+  margin-bottom: 70px;
+}
+.button:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+/* header */
+.header {
+  color: #fff;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  transition: 0.3s;
+}
+.nav-item a {
+  color: #fff;
+  font-style: italic;
+}
+.nav-item a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.header-nav {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+.nav-list ul {
+  display: flex;
+}
+.nav-list {
+  display: none;
+}
+.nav-item {
+  margin-right: 30px;
+}
+header h1 {
+  font-size: 2.6rem;
+  font-style: italic;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+/* jqueryのハンバーガーメニューの場合 */
+/* .berger-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 4vw;
+  transition: 0.3s;
+} */
+/* jqueryのハンバーガーメニューの場合 */
+
+/* cssのハンバーガーメニューの場合 */
+.berger-menu {
+  display: block;
+  position: absolute;
+  top: -100px;
+  transition: 0.3s;
+}
+/* //css のハンバーガーメニューの場合 */
+
+
+
+/* fv */
+.fv {
+  min-height: 450px;
+  position: relative;
+}
+
+.fv img {
+  height: 450px;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.white {
+  color: #fff;
+}
+.contact-text {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.left {
+  text-align: left;
+  display: block;
+}
+footer {
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 1.4rem;
+  /* font-weight: bold; */
+}
+
+/* form */
+
+.contact-form {
+  width: 700px;
+  margin: 100px auto;
+}
+
+.flex {
+  display: flex;
+  margin-bottom: 25px;
+}
+.flex li {
+  margin: 0 20px 5px 0;
+}
+.flex input {
+  margin-right: 10px;
+}
+label {
+  /* display: block; */
+  font-weight: bold;
+  line-height: 22px;
+}
+.form input,
+textarea {
+  width: 100%;
+}
+.form input {
+  margin-bottom: 25px;
+}
+textarea {
+  margin-bottom: 80px;
+}
+
+/* responsive */
+@media (max-width: 800px) {
+  /* @base */
+  .section-title {
+    font-size: 3rem;
+    padding: 0 15px;
+  }
+
+  .section-bottom {
+    font-size: 4rem;
+    margin: 0 25px;
+  }
+  .button {
+    margin-bottom: 40px;
+  }
+
+  /* @header */
+  .nav-list {
+    display: none;
+  }
+  .contact-nav-list {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #282f35;
+  }
+  /* .contact-nav-list {
+    
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #282f35;
+  } */
+  .contact-nav-list ul{
+     padding: 0;
+  }
+
+  .nav-list ul {
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    height: 100%;
+  }
+  .nav-item a {
+    display: block;
+    text-align: center;
+    padding: 50% 0;
+  }
+  .nav-item {
+    margin-right: 0;
+  }
+  .header-title h1 {
+    white-space: nowrap;
+    margin-left: 2.5%;
+  }
+  .header-nav {
+    padding: 15px 0 0 10px;
+  }
+
+  /* header-berger */
+  
+
+  /* jqueryのハンバーガーメニューの場合 */
+  /* .berger-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 4vw;
+  } */
+  /* //jqueryのハンバーガーメニューの場合 */
+
+/* cssのハンバーガーメニューの場合 */
+.contact-nav-list {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left:-100vw;
+  background-color: #282f35;
+}
+
+.berger-menu {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 4vw;
+}
+.css-hunberger{
+  position: absolute;
+  left:-50vw;
+}
+input[type="checkbox"]:checked .berger-menu{
+  left:0;
+}
+/* //cssのハンバーガーメニューの場合 */
+
+
+
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .bar-top {
+    margin-bottom: 10px;
+  }
+  .bar-mid {
+    margin-bottom: 10px;
+  }
+  .cross .bar-top {
+    transform: rotate(45deg) translate(10px, 10px);
+    transition: 0.3s;
+  }
+  .cross .bar-mid {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .cross .bar-bottom {
+    transform: rotate(-45deg) translate(10px, -10px);
+    transition: 0.3s;
+  }
+  /* .no-scroll{
+    overflow: hidden;
+  } */
+
+  /* //header-berger */
+
+  /* //@header */
+  /* @fv */
+
+  .fv {
+    min-height: 360px;
+  }
+
+  .fv img {
+    height: 360px;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  /* //@fv */
+
+  /* @form */
+
+  .contact-form {
+    width: 90%;
+    margin: 100px auto;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 25px;
+  }
+
+  /* //@form */
+}

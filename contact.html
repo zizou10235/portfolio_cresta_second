@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>クリスタ中級編練習</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-nav">
+        <div class="header-title">
+          <h1>Cresta Design</h1>
+        </div>
+
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item"><a href="#concept">Concept</a></li>
+            <li class="nav-item"><a href="#service">Service</a></li>
+            <li class="nav-item"><a href="#works">Works</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="contact-nav-list">
+          <ul>
+            <li class="nav-item"><a href="index.html">HOME</a></li>
+          </ul>
+        </div>
+        <div class="css-hunberger">
+
+          <input type="checkbox" id="hunberger">
+          
+          <label for="gunberger" class="close"></label>
+        </div>
+        <label for="hunberger" class="open">
+        <div class="berger-menu" >
+        
+          <div class="bar bar-top"></div>
+          <div class="bar bar-mid"></div>
+          <div class="bar bar-bottom"></div>
+        </div>
+      </label>
+      </div>
+    </header>
+    <div class="fv">
+      <ul class="slider">
+        <li><img src="img/contact-page-bgi@2x.jpg" alt="" /></li>
+        <!-- <li><img src="img/fv-bgi_02@2x.jpg" alt="" /></li>
+          <li><img src="img/fv-bgi_03@2x.jpg" alt="" /></li> -->
+      </ul>
+      <div class="contact-text">
+        <h1 class="section-title white">Contact</h1>
+        <h2 class="section-bottom white left">contact us</h2>
+      </div>
+    </div>
+    <main>
+      <div class="contact-form">
+        <div class="select">
+          <label class="contact-content">お問い合わせ内容</label>
+          <div class="checkbox">
+            <ul class="flex">
+              <li>
+                <input type="checkbox" id="document" /><label for="document"
+                  >資料請求</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="telephone" /><label for="telephone"
+                  >電話でのご相談を希望</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="app" /><label for="app"
+                  >申し込み</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="form">
+            <div>
+              <label for="name">担当者名</label>
+              <input type="text" id="name" />
+            </div>
+            <div>
+              <label for="tel">電話番号</label>
+              <input type="text" id="tel" />
+            </div>
+            <div>
+              <label for="mail">メールアドレス</label>
+              <input type="text" id="mail" />
+            </div>
+            <div>
+              <label for="other">その他</label>
+              <textarea name="" id="other" cols="30" rows="10"></textarea>
+            </div>
+            <div class="button">Submit</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>©︎cresta.design all rights reserved</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="contact-script.js"></script>
+  </body>
+</html>
