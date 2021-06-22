@@ -136,6 +136,11 @@ header h1 {
 .fv {
   height: 100vh;
   min-height: 550px;
+  position: relative;
+  background-image: url(./img/fv-bgi_01@2x.jpg);
+  background-size: cover;
+  background-position: center;
+  
 }
 .main-copy {
   color: #fff;
